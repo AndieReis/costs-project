@@ -1,18 +1,18 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
-import Navbar from './components/Navbar';
+import Navbar from './components/layout/Navbar';
 import Home from './components/pages/Home';
 import Projects from './components/pages/Projects';
 import Company from './components/pages/Company';
 import Contact from './components/pages/Contact';
 
 import Container from './components/layout/Container';
+import Footer from './components/layout/Footer';
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <h1>HELLO WORLD</h1>
         <Navbar />
       </div>
 
@@ -25,7 +25,7 @@ function App() {
         </Routes>
       </Container>
 
-      <p>Footer</p>
+      <Footer />
     </Router>
 
 
